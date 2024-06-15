@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:latest
+    env_file:
+      - db.env
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"

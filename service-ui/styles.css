@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+.details {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+
+#publicationsContainer p {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#publicationsContainer p a {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#publicationsContainer p a:hover {
+    text-decoration: underline;
+}
+
+#publicationsContainer p .publication-details {
+    font-size: 0.9em;
+    color: #555;
+}
+
+#publicationsContainer p .publication-authors {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+#publicationsContainer p .publication-citations {
+    font-size: 0.9em;
+    color: #555;
+}

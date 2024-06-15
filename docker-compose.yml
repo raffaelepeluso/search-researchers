@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  database:
+    image: postgres:latest
+    env_file:
+      - ./database/db.env
+    volumes:
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  scopus:
+    image: service-scopus
+    ports:
+      - "3000:3000"
+
+  researchers:
+    image: service-researchers
+    ports:
+      - "3001:3001"
+
+  publications:
+    image: service-publications
+    ports:
+      - "3002:3002"
+
+  ui:
+    image: service-ui
+    ports:
+      - "5000:80"
+
+  cineca:
+    image: service-cineca
